@@ -1,0 +1,10 @@
+﻿@model AttachmentViewModel
+@{
+    ViewData["Title"] = "Attachments";
+}
+
+    <form asp-action="Attachments" asp-controller="Customers" enctype="multipart/form-data">
+        <input asp-for="Description" />
+        <input asp-for="FormFile" />
+        <input type="submit" class="btn btn-primary" />
+    </form>

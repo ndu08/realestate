@@ -27,9 +27,13 @@ namespace RealEstate.Controllers
         // GET: Customers
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Customers.Where(c => c.IsActive).Include(c => c.Address);
+            var applicationDbContext = _context.Customers
+                .Where(c => c.IsActive)
+                .Include(c => c.Address)
+                .Include(s => s.Service);
             return View(await applicationDbContext.ToListAsync());
         }
+
 
         // GET: Customers/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -41,6 +45,7 @@ namespace RealEstate.Controllers
 
             var customer = await _context.Customers
                 .Include(c => c.Address)
+                .Include(s => s.Service)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (customer == null)
             {
@@ -115,7 +120,10 @@ namespace RealEstate.Controllers
                 return NotFound();
             }
 
-            var customer = await _context.Customers.Include(c => c.Address).FirstOrDefaultAsync(c => c.Id == id);
+            var customer = await _context.Customers
+                .Include(c => c.Address)
+                .Include(s => s.Service)
+                .FirstOrDefaultAsync(c => c.Id == id);
             if (customer == null)
             {
                 return NotFound();
@@ -168,6 +176,7 @@ namespace RealEstate.Controllers
 
             var customer = await _context.Customers
                 .Include(c => c.Address)
+                .Include(s => s.Service)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (customer == null)
             {

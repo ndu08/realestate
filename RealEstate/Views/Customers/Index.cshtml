@@ -4,66 +4,96 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+@*<h1>Index</h1>*@
+
+<form class="form-inline my-2 my-lg-0">
+    <input class="form-control col-sm-10" name="searchInput" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-primary col-sm-2" type="submit">Search</button>
+</form>
+
+<hr/>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Create New Customer</a>
 </p>
-<table class="table">
+
+<table class="table table-hover">
     <thead>
         <tr>
-            <th>
+            <th class="table-primary">
                 @Html.DisplayNameFor(model => model.FirstName)
             </th>
-            <th>
+            <th class="table-primary">
                 @Html.DisplayNameFor(model => model.LastName)
             </th>
-            <th>
+            <th class="table-primary">
                 @Html.DisplayNameFor(model => model.DOB)
             </th>
-            <th>
+            <th class="table-primary">
+                @Html.DisplayNameFor(model => model.Phone)
+            </th>
+            <th class="table-primary">
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th class="table-primary">
                 @Html.DisplayNameFor(model => model.Description)
             </th>
-            <th>
+            <th class="table-primary">
                 @Html.DisplayNameFor(model => model.Criteria)
             </th>
-            <th>
+            <th class="table-primary">
+                @Html.DisplayNameFor(model => model.Service)
+            </th>
+            <th class="table-primary">
                 @Html.DisplayNameFor(model => model.DateCreated)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Address)
-            </th>
-            <th></th>
+            <th class="table-primary"></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.FirstName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.LastName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DOB)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Criteria)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DateCreated)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Attachments" asp-route-id="@item.Id">Attachments</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a> |
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DOB)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Phone)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Criteria)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Service.Type)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateCreated)
+                </td>
+                <td>
+                    <nav class="nav flex-column">
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="nav-link">Edit</a>
+                        <a asp-action="Details" asp-route-id="@item.Id" class="nav-link">Details</a>
+                        <a asp-action="Attachments" asp-route-id="@item.Id" class="nav-link">Attachments</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="nav-link">Delete</a>
+                    </nav>
+                    @*<a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                      <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                      <a asp-action="Attachments" asp-route-id="@item.Id">Attachments</a> |
+                      <a asp-action="Delete" asp-route-id="@item.Id">Delete</a> |*@
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

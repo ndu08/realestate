@@ -8,7 +8,9 @@ namespace RealEstate.Models
 {
     public class AttachmentViewModel
     {
-        public string Description { get; set; }
         public IFormFile FormFile { get; set; }
+        public int CustomerId { get; set; }
+        public string FileName { get; set; }
+        public string UniqueFileName { get; set; }
     }
 }

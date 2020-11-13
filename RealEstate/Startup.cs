@@ -13,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using RealEstate.Extensions;
+using AutoMapper;
 
 namespace RealEstate
 {
@@ -35,7 +36,10 @@ namespace RealEstate
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
-            services.AddControllersWithViews();
+            services.AddAutoMapper(typeof(Mappings.MappingProfile));
+
+            services.AddControllersWithViews()
+                    .AddRazorRuntimeCompilation();
             services.AddRazorPages();
         }
 

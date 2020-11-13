@@ -1,0 +1,147 @@
+
+Nelya Dukhovych
+9364 Hoff St
+Philadelphia, PA 19115
+267-312-7364
+nelyacsharp@gmail.com
+
+
+Profile
+
+Enthusiastic junior web-developer with 6 monthes of experience. 
+Skilled at writing well-designed, testable and efficient code using ASP.NET MVC and client-side web development.
+Initiative to actively seek new knowledge and improve skills. 
+
+or
+
+(Carrier Objective)
+Hardworking professional junior web-developer who contribute to the success of the company through efficient use of my technical, communication, engineering knowledge and interpersonal skills.
+
+
+Employment History
+
+Real State Company
+Huntingdon Valley, PA
+Web Developer  04/2020 - Present  
+
+//////or
+
+Re/Max Elite
+Huntingdon Valley, PA
+Junior Web Developer  04/2020 - Present  
+
+Volunteered as a Web developer for realtor agent
+ 
+- Developed secure intranet web application using ASP.NET MVC, jQuery, HTML and CSS.
+- Ensure user has an ability to register new and maintaine existing clients.
+- SQL Stored Procedures to CRUD operations on employee’s records.
+- Addded a functionality to upload images and PDF files.
+- Prepare test data and perform testing/debugging activities.
+• Performed other duties as assigned.
+
+
+
+    -  Listings (realtors properties) (RestaurantReview project)
+    - Transactions (buing & selling) ? 
+    - Todos ( schedule, meatings, showings) Orest project
+    - Attachments of pictures  (RestaurantReview project)
+    - Attachement of agreements (RestaurantReview project)
+    - Marketing slides ( carousel of pictures) (RestaurantReview project)
+    - Questions and answers
+
+
+Infinity of Care, INC
+Feasterville, PA
+Medical Biller  09/2018 - Present
+
+    - Set up new patient account.
+    - Assign ICD-10 to physicians diagnosis. Verify correct CPT codes for a variety of specialties. 
+    - Insure accurancy of insurance claims. Make sure claims are entered and submitted with 48 hours of receipt. 
+    - Set-up practice management software for submission of electronic claims to clearinghouse. Work with clearinghouse to resolve file compatibility issues.
+    - Retrieve Electronic Remittance Advice (ERA's).
+    - Post and reconcile insurance and patient payments. Research and resolve incorrect payments, EOB rejections, and other issues with outstanding accounts.
+    - Re-submit insurance claims as necessary. Knowledgeable in timely filling restrictions.
+    - Ensure office practice are in compliance with HIPAA regulations.
+
+
+Infinity of Care, INC
+Feasterville, PA
+Front Desk Receptionist  09/2014 - 10/2018
+
+    - Greeting and welcoming clients and providing them with a positive first impression of the organization.
+    - Maintained accurate records of patient care, condition, progress and concerns.
+    - Scheduled and accompanied clients to medical appointments.
+    - Performed clerical duties, such as word processing, data entry, answering phones and filings.
+    - Prepared patient charts, pre-admission and consent forms as necessary.
+    - Assisted in maintenance of medical charts and/or electronic medical records.
+
+ (Software and Programming Languages
+          MySQL, C#, .Net, ASP.NET, Entity Framework, LINQ, MVC, Unit Testing, Web API, 
+          Html, CSS, XML, AJAX, JavaScript, jQuery, JSON, 
+          Bootstrap, GitHub, Fiddler, Postman)
+
+Skills
+
+Programming languages
+C#, JavaScript
+
+Web Technologies
+HTML5, CSS, .NET(Core, MVC, WebForms, Unit Testing, Web API, SignalR), Angular 10, TypeScript
+
+UI Libraries
+Bootstrap, Materialize
+
+Data Modeling
+JSON, XML
+
+Data Management
+MS SQL, Entity Framework
+
+Version Control
+Git
+
+Other
+Fiddler, Postman, Swagger
+
+
+Certification
+
+Udemy                                                                                                                  2019 – 2020
+C# Intermediate, C# Advanced  - Mosh Hamedani
+The Web Developer Bootcamp - Colt Steele
+
+
+Education
+
+American Advanced Institute of Technology                                                         Feasterville, PA
+Advanced Training in Microsoft .Net Software Development                             10/2019-08/2020
+Diploma in Microsoft .Net Applications Development
+
+Community College of Philadelphia                                                                      Philadelphia, PA
+Proficiency Certificate in Medical Insurance Billing                                           01/2016 - 02/2017
+
+Community College of Philadelphia                                                                     Philadelphia, PA
+Associate in Arts                                                                                                 09/2012 - Present
+Culture Sciense & Technology
+
+Precarpathian University                                                                         Ivano-Frankivsk, Ukraine
+Bachelor's Degree in Foreign Literature                                                            09/2004 - 05/2010
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

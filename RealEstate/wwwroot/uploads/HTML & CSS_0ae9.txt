@@ -1,0 +1,213 @@
+
+8:19 PM 3/22/2020
+
+HTML - hypertext markup language.
+
+- Not a programming language, it's just used to display stuff on a screen
+- markup language for creating webpages/documents
+- building blocks of the Web
+
+- doesn't need a server
+- files must end with the .html extension
+- runs in a web browser(Chrome, Firefox...)
+- ndex.html is the root/home page of a website
+
+e.g http://www.something.com
+       Loads the index.html file
+
+    http://www.something.com/about.html
+    Loads the about.html file
+
+regular structure of a page:
+<!DOCTYPE html>
+ <html>
+
+      <head>
+              <title>Page title</title>     --- what ever we will put in a title we will see in a browser tag
+      <head/>
+
+      <body>
+               <h1>This is a heading.</h1>
+               <p>This is a paragraph.</p>
+               <p>This is another paragraph.</p>
+      </body>
+
+ </html>
+
+<!DOCTYPE html> --- explains what type of document the page is 
+
+Tag Syntax
+<tagname>content</tagname>
+
+<br/> self closing tag but we can use <br> in HTML5
+
+<!-- -->  comments
+
+
+Inline Elements:     <span>, <img>, <a>
+   - do not start on a new line
+   - take only the necessary width
+
+Block Elements:   <div>, <h1> - <h6>, <p>, <form>
+  - Start on a new line (everything after this tag will start on a new line)
+  - Take full width available
+
+
+<strong> </strong>- bold
+<em>  - italic
+<a> wrap smth in a link
+<a href=" " > </a>  href it's a location where we want our link to open
+<a href="about.html"> -- local source
+<a href="http://google.com"> - external source
+
+<a href="http://google.com" target="_blank"> -- link will be opened in a new window
+ 
+Tag Attributes:
+<tagname attributename="attributevalue">content</tagname>
+
+--All tags can have attributes;
+--Provide info about an element;
+--Places within the start tag;
+--Key/Valu pairs(id="someid").
+
+List : 
+2 kinds of list: 
+------unordered list: bullet points
+       <ul>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+        </ul>
+------ordered list: numbers
+        <ol>
+            <li>List Item 1</li>
+            <li>List Item 2</li> 
+        </ol>
+
+
+Tables:
+<table></table>
+  has heading and a body: heading where the names of the columns
+                                             body - informtion
+
+
+ <!-- Drop Down-->
+            <div>
+                <label>Gender</label>
+                <select nema="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+<!--Buttons-->
+ <button>Click Me</button> ----- this button out of the form not gonna work because we need Java script for that
+
+
+<!-- Image-->
+<img> -- it is a self closing tag
+
+<img src=" here name of the saved image "> -- usually you have to save image where your project is , otherwise you have to put source where your image is saved
+e.g: <img src="sample.jfif">  or <img src="images/sample.jfif"> 
+        <img src="sample.jfif" alt="My Sample image">  -- alt="My Sample image" we need this part in case if we are not gonna be able to find our image, it's in another folder or we changed its name.
+
+
+CSS:
+
+3 Methods for adding CSS:
+
+     --- Inline CSS: Directly in the html element (NO!!!) - profesional don't do it
+
+ <!--Inline Method --- -->
+    <h1 style="color: red">Hello World !</h1>
+   
+
+     --- Internal CSS: Using <style> tags within a single document
+  <!--Internal Method and h1 in the body---->
+    <style type="text/css">
+          h1{
+               color: blueviolet;
+            }
+    </style>
+ 
+     --- External CSS: Linking an external .css file  -- the best and most used
+
+ <!--External Method from file style.css-->
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+ 
+at style.css file we are writing :
+h1{
+    color: green;
+    }
+
+
+Colors in CSS:
+  - Color Nmaes: color: red;
+                             background: coral;
+ - HTML5 Color names; 
+ - Hexadecimal:  color:  #00ff00;
+ - RGB:  color: rgb(0,0,255);
+
+Differences between ID and class 
+ ID - always should be unique
+ Classes -  can be re-used ( you can use classes always )
+
+
+
+If you are dealing with conatainers it's better to use percentage, because when you will minimize or maximize the window text will be changed according to your action.
+
+.container{
+    width: 80%;
+    margin: auto;
+
+}
+
+ If you will put pixels, you are not gonna be able to see some text
+
+.container{
+    width: 500px;
+    margin: auto;
+}
+
+Marging and Padding
+
+Padding it' s a space inside (between content and border)
+Marging it's a space outside ( outside the border )
+
+Long and Short Ways:
+long: p{
+         margin-top: 5px;
+         margin-bottom: 5px;
+         margin-right: 5px;
+         margin-left: 5px;
+         } 
+Short: (order:top-right-bottom-left)  
+        p{  margin: 5px 10px 5px 10px;
+        }
+    
+Or even shorter if every 2 sides will be the same size: 
+       p{  margin: 5px 10px; } or   p{  margin: 5px; }
+
+ it's called reset , and will be applied 
+to everything in our website
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+  <div class="clr"></div> it will claer any floats above
+
+
+
+
+
+
+
+
+
+
+
+
+

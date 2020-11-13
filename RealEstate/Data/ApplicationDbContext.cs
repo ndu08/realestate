@@ -16,5 +16,7 @@ namespace RealEstate.Data
         public virtual DbSet<Customer> Customers { get; set; }
         public virtual DbSet<Address> Addresses { get; set; }
         public virtual DbSet<Service> Services { get; set; }
+        public virtual DbSet<CustomerFile> CustomerFiles { get; set; }
+
     }
 }
